@@ -16,3 +16,11 @@ CREATE TABLE `user` (
 ALTER TABLE `user` ADD UNIQUE (`username`);
 ALTER TABLE `user` ADD UNIQUE (`email`);
 ALTER TABLE `user` ADD UNIQUE (`phone`);
+
+DROP TABLE IF EXISTS `music`;
+CREATE TABLE `music` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL comment '歌名',
+  `singer` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
