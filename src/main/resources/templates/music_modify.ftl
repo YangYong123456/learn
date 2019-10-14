@@ -32,12 +32,12 @@
         <form action="/music/do_modify">
             <input type="hidden"id="id" name="id" value="${music.id}">
             <div class="form-group">
-                <label for="musicname">用户名</label>
-                <input type="text" class="form-control" id="musicname" name="musicname" value="${music.musicname}" placeholder="请输入用户名">
+                <label for="name">歌名</label>
+                <input type="text" class="form-control" id="name" name="name" value="${music.name}" placeholder="请输入歌名">
             </div>
             <div class="form-group">
-                <label for="password">密码</label>
-                <input type="password" class="form-control" id="password" name="password" value="${music.password}" placeholder="请输入密码">
+                <label for="singer">歌手</label>
+                <input type="singer" class="form-control" id="singer" name="singer" value="${music.singer}" placeholder="请输入歌手">
             </div>
             <button type="submit" class="btn btn-default">确认</button>
         </form>

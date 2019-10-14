@@ -30,7 +30,7 @@
       <div class="col-md-8">      
         <table class="table table-hover">
           <thead>
-          <th>ID</th><th>名称</th><th>密码</th><th>头像</th><th>删除</th><th>修改</th><th>头像</th>
+          <th>歌名</th><th>歌手</th><th>删除</th><th>修改</th><th>头像</th>
           </thead>
           <tbody>
           <#list musics as music>
