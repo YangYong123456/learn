@@ -27,14 +27,14 @@ public class MusicService {
     public List<Music> searchMusics(String keyword) {
         Music music = new Music();
         music.setName(keyword);
-        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("musicname", match->match.contains());
+        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("name", match->match.contains());
         Example<Music> example = Example.of(music, matcher);
         Sort sort = new Sort(Direction.DESC, "id");
         return MusicDao.findAll(example, sort);
     }
 
-    public Music addMusic(Music user) {
-        return MusicDao.save(user);
+    public Music addMusic(Music music) {
+        return MusicDao.save(music);
     }
 
     public void deleteMusic(Long id) {
